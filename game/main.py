@@ -12,10 +12,10 @@ def index():
     return page
 
 
-@app.get("/game")
-def game():
+@app.get("/game/{id}")
+def game(id:str):
     page = Html(
-        Head(Title("New Race Game")),
+        Head(Title(f"Race Game: {id}")),
         Body(Div(H1("Let's race!"))),
     )
     return page
