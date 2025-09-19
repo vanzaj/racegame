@@ -10,9 +10,24 @@ from pytest_bdd import (
 scenarios("../race-game.feature")
 
 
+@given("I am admin")
+def _():
+    pass
+
+
+@when("I create a new game with ID 123")
+def _():
+    pass
+
+
+@then("URL for game 123 should be accessible")
+def _():
+    pass
+
+
 @given("The game with ID 123 is running")
 def test_game_running(page: Page):
-    rsp = page.goto('/game/123')
+    rsp = page.goto("/game/123")
     assert rsp.status == 200
 
 

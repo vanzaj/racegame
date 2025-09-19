@@ -13,11 +13,17 @@ def index():
 
 
 @app.get("/game/{id}")
-def game(id:str):
-    page = Html(
-        Head(Title(f"Race Game: {id}")),
-        Body(Div(H1("Let's race!"))),
-    )
+def game(id: int = 0):
+    if id == 0:
+        page = Html(
+            Head(Title(f"Race Game")),
+            Body(Div(H1("No games started yet"))),
+        )
+    else:
+        page = Html(
+            Head(Title(f"Race Game: {id}")),
+            Body(Div(H1("Let's race!"))),
+        )
     return page
 
 

@@ -10,3 +10,6 @@ dependencies = [
     "pytest-playwright>=0.7.1",
     "python-fasthtml>=0.12.27",
 ]
+
+[tool.pytest.ini_options]
+pythonpath = ["."]

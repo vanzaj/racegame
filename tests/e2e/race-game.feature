@@ -1,5 +1,10 @@
 Feature: Emerson's Race Game
 
+  Scenario: Admin can start a new game
+    Given I am admin
+    When I create a new game with ID 123
+    Then URL for game 123 should be accessible
+
   Scenario: Single player
     Given The game with ID 123 is running
     When I join the game 123

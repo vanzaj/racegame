@@ -1,5 +1,8 @@
-start:
+serve:
 	uv run game/main.py
 
-e2etest:
-	uv run pytest -v --gherkin-terminal-reporter
+teste2e:
+	uv run pytest -v --gherkin-terminal-reporter tests/e2e
+
+testunit:
+	uv run pytest -v tests/unit
