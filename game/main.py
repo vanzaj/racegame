@@ -6,7 +6,7 @@ app = FastHTML()
 @app.get("/")
 def index():
     page = Html(
-        Head(Title("Race Game")),
+        Head(Title("Race Game"), picolink),
         Body((H1("Welcome to the Race Game!"), A("Start new game", href="/game"))),
     )
     return page
