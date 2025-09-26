@@ -33,15 +33,21 @@ def test_game_running(page: Page):
 
 @when("I join the game 123")
 def test_join_game(page: Page):
-    page.goto("/game/123")
+    page.goto("/game/123/p/1")
     expect(page).to_have_title("Race Game: 123")
+    expect(page.locator("id=player_name")).to_have_text("Name: Player-1")
 
 
-@then('The car named "Player 1" should have 0 damage')
+@then('I should see that my name is "Player 1"')
 def _():
     pass
 
 
-@then('There should be 1 car with named "Player 1"')
+@then("My current position is 0")
+def _():
+    pass
+
+
+@then("My current damage is 0")
 def _():
     pass
