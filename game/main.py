@@ -11,7 +11,7 @@ def index():
 
 
 @app.get("/game/{id}/")
-def game(id: int = 0):
+def game_page(id: int = 0):
     if id == 0:
         body = Body(H1("No games started yet"))
         page = Titled(f"Race Game", body)
@@ -22,7 +22,7 @@ def game(id: int = 0):
 
 
 @app.get("/game/{id}/p/{player_id}")
-def game(id: int = 0, player_id: int = 0):
+def game_page_for_player(id: int = 0, player_id: int = 0):
     body = Body(
         H1("Let's race!", Div(P(f"Name: Player-{player_id}", id="player_name")))
     )

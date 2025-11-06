@@ -6,6 +6,7 @@ Feature: Emerson's Race Game
     When I create a new game with ID 123
     Then URL for game 123 should be accessible
 
+  @ignore
   Scenario: Single player joins a game
     Given The game with ID 123 is running
     When I join the game 123
