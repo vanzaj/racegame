@@ -51,7 +51,7 @@ A fun way to learn about technical debt and legacy code
 
 -----
 
-✅ Simple formula: Final movement = base step – damage (never negative).
-✅ Works with 3 to 100 players.
-✅ Fun to watch on the big screen, fun to play on your phone.
+- ✅ Simple formula: Final movement = base step – damage (never negative).
+- ✅ Works with 3 to 100 players.
+- ✅ Fun to watch on the big screen, fun to play on your phone.
 
